@@ -1,0 +1,127 @@
+@media only screen and (min-width: 375px) {
+	div#hero-mobile {
+		height: 275px;
+	}
+	p {
+		margin: auto;
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	
+	form {
+		margin: auto;
+	}
+	
+	input[type=text] {
+		margin: auto;
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	div#logo-container {
+		padding-top: 45px;
+		padding-bottom: 35px;
+		padding-left: 45px;
+	}
+	div#hero-mobile {
+		height: 512px;
+	}
+	div#form-container {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	div#form-container #heading {
+		font-size: 52px;
+	}
+	
+	p {
+		font-size: 29px;
+		width: 639px;
+		line-height: 41px;
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	
+	form {
+		width: 614px;
+	}
+	input[type=text]{
+		font-size: 29px;
+		width: 614px;
+	}
+	
+	#submit {
+		padding: 25px 55px;
+		bottom: 66px;
+	}
+	
+	form strong {
+		font-size: 29px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	section {
+		display: flex;
+	}
+	
+	section #content-column #logo-container img {
+		width: 142px;
+	}
+
+	section #content-column div#logo-container {
+		padding-top: 60px;
+		padding-left: 110px;
+	}
+	section #content-column #form-container {
+		background-color: transparent;
+		width: 500px;
+		padding-left: 110px;
+		padding-top: 85px;
+	}
+	
+	section #form-container #heading {
+		font-size: 65px;
+		 text-align: left; 
+		letter-spacing: 15px;
+	}
+
+	section #form-container p {
+		text-align: left; 
+		font-size: 15px;
+		width: 427px;
+		margin: 0;
+		line-height: 27px;
+		padding-bottom: 40px;
+		padding-top: 20px;
+	}
+	
+	section #content-column #form-container form {
+		width: 432px;
+		margin: 0;
+	}
+	input[type=text]{
+		background-color: transparent;
+		width: 432px;
+	}
+	
+	form strong {
+		font-size: 15px;
+	}
+	
+	section #content-column {
+		background-image: url('../images/bg-pattern-desktop.png'), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));;
+	}
+	div#hero-mobile {
+		display: none;
+	}
+	section div#content-column {
+		flex: 0 0 58%;
+	}
+	section div#image-column {
+		width: 100%;
+		display: block;
+	}
+}
