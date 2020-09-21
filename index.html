@@ -1,62 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.google.com/specimen/Josefin+Sans' rel='stylesheet'>
-  <link href='CSS/styling.css' rel='stylesheet'>
-  <link href='CSS/styling-responsive.css' rel='stylesheet'>
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+	
+	<link href='https://fonts.googleapis.com/css?family=Spartan:400,500,700,800' rel='stylesheet'>	
+	<link rel="stylesheet" href="CSS/styling.css" />
+	<link rel="stylesheet" href="CSS/styling-responsive.css" />
+    <title>Frontend Mentor | Social proof section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
 	<section>
-		<div id="content-column">
-			<div id="logo-container">
-				<img src="images/logo.png" alt="logo" />
-			</div>
-			<div id="hero-mobile">
-			</div>
-		
-			<div id="form-container">
-				<div id="heading">
-					<span id="red-text">We're</span>
-					<span><strong>coming</strong></span>
-					<span><strong>soon</strong></span>
-				</div>
-			  
-				<p>
-					Hello fellow shoppers! We're currently building our new fashion store. 
-					Add your email below to stay up-to-date with announcements and our launch deals.
+		<div class="flex-row">
+			<div id="left-column">
+				<div id="headline">10,000+ of our<br />users love our<br />products.</div>
+				
+				<p class="firstrow-text">
+					We only provide great products combined with excellent customer service.
+					See what our satisfied customers are saying about our services.
 				</p>
-			 
-				<form onsubmit="Validate();return false;">
-					<input type="text" id="email" name="email" placeholder="Email Address" />
-					<input type="submit" id="submit" name="submit" value="" />
-					<img src="images/icon-error.png" alt="error" id="error-icon" class= "hide-error"
-						width="30" height="30" />
-					<strong id="error-message" class= "hide-error">Please provide a valid email</strong>
-				</form>		
+			</div>	
+			<div id="right-column">	
+				<div id="rating-flex">
+					<div class="rating-container firstrow-text" id="rating-reviews">
+						<div class="stars">
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+						</div>
+						
+						Rated 5 Stars in Reviews
+					</div>
+					<div class="rating-container firstrow-text" id="rating-guru">
+						<div class="stars">
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+						</div>
+						
+						Rated 5 Stars in Report Guru
+					</div>
+					<div class="rating-container firstrow-text" id="rating-tech">
+						<div class="stars">
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+							<img src="images/icon-star.png" alt="star" />
+						</div>
+						
+						Rated 5 Stars in BestTech
+					</div>
+				</div>
 			</div>
 		</div>
-		<div id="image-column">
-			<img src="images/hero-desktop.jpg" alt="hero-desktop" width="100%" height="100%" />
+		<div class="flex-row" id="testimonials">
+			<div class="testimony testimony-text" id="colton-smith">
+				<div class="person">
+					<img src="images/image-colton.jpg" alt="colton-smith" />
+					
+					<span class="name">Colton Smith</span>
+					<span class="buyer">Verified Buyer</span>
+				</div>
+				<p>
+					"We needed the same printed design as the one we had ordered a week prior.
+					Not only did they find the original order, but we also received it in time.
+					Excellent!"
+			</div>
+			<div class="testimony testimony-text" id="irene-roberts">
+				<div class="person">
+					<img src="images/image-irene.jpg" alt="irene roberts" />
+					
+					<span class="name">Irene Roberts</span>
+					<span class="buyer">Verified Buyer</span>
+				</div>
+				<p>
+					"Customer service is always excellent and very quick turn around. Completely
+					delighted with the simplicity of the purchase and the speed of delivery."
+			</div>
+			<div class="testimony testimony-text" id="anne-wallace">
+				<div class="person">
+					<img src="images/image-anne.jpg" alt="anne wallace " />
+					
+					<span class="name">Anne Wallace</span>
+					<span class="buyer">Verified Buyer</span>
+				</div>
+				<p>
+					"Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!"
+			</div>
 		</div>
-	</section>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-  
-  <script src="form-submit.js"></script>
-</body>
+	</section>    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
