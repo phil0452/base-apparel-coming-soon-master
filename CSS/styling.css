@@ -1,122 +1,100 @@
-/* 
-this css is mobile first, so the main styling
-is built for a mobile screen 
-see styling-responsive.css for more
-*/
 html,
 body{
 	margin: 0;
-	height: 100%;
-	font-family: 'Josefin Sans';
+	height 100%;
 }
 
-div#logo-container{
-	padding-top: 30px;
-    padding-bottom: 25px;
-    padding-left: 30px;
+body {
+	background-image: url('../images/bg-pattern-top-mobile.png');
+	background-repeat: no-repeat;
+	font-family: 'Spartan';
 }
 
-div#logo-container img{
-	width: 120px;
-    height: auto;
+.firstrow-text {
+	font-size: 14px;
 }
 
-div#hero-mobile {
-	background-image: url('../images/hero-mobile.jpg');
-	background-size: cover;
-	height: 251px;
+section .flex-row {
+    padding: 25px;
 }
-
-div#form-container {
-	background-color: hsl(300, 100%, 95%);
-	padding: 60px 25px;
-}
-
-div#form-container #heading {
-	font-size: 42px;	
+section .flex-row #left-column {
 	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 10px;
+	padding-top: 70px;
 }
-
-div#form-container #heading span{
-	display: block;
-	font-family: 'Josefin Sans';
-	font-weight: 300;	
-}
-div#form-container #heading span#red-text {	
-    color: hsl(0, 36%, 70%);
-}
-
-p {
-	color: hsl(0, 36%, 70%);
-    text-align: center;
-    font-size: 12px;
-    width: 294px;
-    line-height: 23px;
-    letter-spacing: 1px;
-	padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-form {
-	width: 295px;
-}
-
-input[type=text]{
-	background-color: hsl(300, 100%, 95%);
-    padding: 15px 20px;
-    width: 295px;
-    box-sizing: border-box;
-    border-radius: 35px;
-    border: 1px solid hsl(0, 6%, 75%);
-	font-family: 'Josefin Sans';
-    font-size: 12px;
-    font-weight: 800;
-}
-
-input[type=text]::placeholder{
-	color: hsl(0, 6%, 75%);
-}
-
-input[type=text]:focus {
-	outline-color: hsl(0, 6%, 75%);
-	outline-width: 0;
-}
-
-#submit {
-    background-image: url(../images/icon-arrow.png), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 15px 30px;
-    border-radius: 35px;
-    position: relative;
-    bottom: 47px;
-    float: right;
-    border: none;
-}
-
-#submit:focus {
-	outline-width: 0;
-}
-section div#image-column {
-		display: none;
-	}
 	
-form #error-icon {
-    position: relative;
-    bottom: 48px;
-    float: right;
-    right: 15px;
+section .flex-row #left-column #headline{
+	color: hsl(300, 43%, 22%);
+	font-size: 29px;
+	font-weight: 700;
+	padding-left: 20px;
 }
 
-form strong {
-	font-family: 'Josefin Sans';
-	color: hsl(0, 36%, 70%);
-    font-size: 12px;
-	padding-left: 21px;
+section .flex-row #left-column p {
+    color: hsl(303, 10%, 53%);    
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 23px;
 }
 
-.hide-error {
-	display: none;
+section .flex-row #right-column {
+	padding-right: 10px;
+	text-align: center;
+}
+section .flex-row #right-column .rating-container {
+	color: hsl(300, 43%, 22%);
+	background-color: hsl(300, 24%, 96%);
+	font-weight: 800;
+	border-radius: 7px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section .flex-row #right-column .rating-container .stars{
+	padding-bottom: 10px;
+}
+
+section .flex-row .testimony {
+	background-color: hsl(300, 43%, 22%);
+}
+
+section .flex-row .testimony img{
+	width: 35px;
+	border-radius: 20px;
+}
+section .flex-row .testimony {
+	font-size: 12px;
+    padding: 25px;
+	width: 250px;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+section .flex-row .testimony .name,
+section .flex-row .testimony p {
+	color: hsl(0, 0%, 100%);
+}
+
+section .flex-row .testimony .name {
+	padding-bottom: 5px;
+	margin-right: 5px;
+}
+section .flex-row .testimony .person {
+	width: 140px;
+    padding-bottom: 45px;
+}
+
+section .flex-row .testimony .person .buyer{
+	color: hsl(333, 80%, 67%);
+}
+section .flex-row .testimony .person img{
+	float: left;
+}
+section .flex-row .testimony span {
+	float: right;
+}
+section .flex-row .testimony .name {
+	font-weight: 500;
+}
+section .flex-row .testimony p{
+	line-height: 20px;
 }
